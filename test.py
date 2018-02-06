@@ -60,12 +60,7 @@ def perms(str):
 
 # FAQ five
 def isEqual(str1, str2):
-    seq = perms(str1)
-
-    if str1 in seq and str2 in seq:
-        return True
-
-    return False 
+    return set(str1) == set(str2)
     
 if __name__ == '__main__':
     assert 'stai? come Ciao,' == reverseSentence('Ciao, come stai?')
